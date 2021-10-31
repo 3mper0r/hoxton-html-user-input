@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    background: linear-gradient( to left, rgb(187, 20, 220), rgb(40, 160, 207));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: hsl(278, 63%, 83%, 1);
+}
+
+#papperform {
+    display: grid;
+    grid-template: auto / 1fr;
+    text-align: left;
+    margin: 30px 30px 30px 30px;
+}
+
+.forms {
+    border: 1px transparent;
+    border-radius: 8px;
+    box-shadow: 0px 15px 35px 20px hsl(278, 63%, 83%, 1);
+}
+
+input {
+    display: inline;
+    width: 100%;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-color: thistle;
+    border-width: thin;
+    font-size: 18px;
+}
+
+select {
+    display: inline;
+    width: 100%;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-color: thistle;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+textarea {
+    display: inline;
+    width: 100%;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-color: thistle;
+    font-size: 18px;
+}
+
+#submit {
+    width: 100%;
+    height: 33px;
+    border-radius: 20px;
+    background: linear-gradient( to left, rgb(40, 160, 207), rgb(187, 20, 220));
+    color: white;
+    background-clip: text;
+    border: none;
+    margin-top: 10px;
+}
+
+#name, #email, #service, #budget {
+    height: 45px;
+}
+
+#email-label, #service-label, #budget-label {
+    margin-top: 20px;
+}
+
+#message-here {
+    margin-top: 15px;
+}
+
+#textarea-label {
+    margin-top: 20px;
+}
+
+#terms-label, #terms {
+    display: grid;
+    grid-template: 16px 16px / 240px 35px;
+    font-size: 14px;
+}
+
+#terms-label {
+    margin-top: 16px;
+}

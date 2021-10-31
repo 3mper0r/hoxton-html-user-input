@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>User Input</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+            <div class="forms">
+                <div class="message">
+                    <h1>Hey there!</h1>
+                </div>
+                <form id="papperform" action="">
+                    <label id="name-label" for="name">
+                        What's your name?
+                        <input type="text" name="name" id="name" required placeholder="Enter your name" minlength="6" >
+                    </label>
+                    <label id="email-label" for="email">
+                        What's your email address?
+                        <input type="email" name="email" id="email" required placeholder="Enter your email address">
+                    </label>
+                    <label id="service-label" for="service">What Services are you looking for?
+                        <select id="service" name="service" required>
+                            <option value="question" selected disabled>Choose Service:</option>
+                            <option value="massage">Massage</option>
+                            <option value="car-wash">Car Wash</option>
+                            <option value="hydraulic">Hydraulic</option>
+                            <option value="chimney-sweep">Chimney Sweep</option>
+                            <option value="manicure-pedicure">Manicure & Pedicure</option>
+                            <option value="detox">Detox</option>
+                        </select>     
+                    </label>
+                    <label id="budget-label" for="budget">What is your budget?
+                        <select name="budget" id="budget" required>
+                            <option value="select-budget" selected disabled>Select Budget</option>
+                            <option value="0-5,000">0-5,000</option>
+                            <option value="5,001-20,000">5,001-20,000</option>
+                            <option value="20,001-50,000">20,001-50,000</option>
+                            <option value="1-trillion">1 trillion</option>
+                            <option value="1,000,000,000-doge">1,000,000,000 DOGE</option>
+                        </select>
+                    </label>
+                    <label id="textarea-label" for="more">
+                        Anything else you would like to tell us?
+                        <textarea id="message-here" placeholder="Your message here.." rows="3">
+        
+                        </textarea>
+                    </label> 
+                    <label id="terms-label" for="terms">I agree with the Terms & Conditions
+                        <input type="checkbox" name="terms" id="terms" required>
+                    </label>
+                    <button id="submit">Submit -></button>
+                </form>
+            </div>   
+    </div>  
+</body>
+</html>
